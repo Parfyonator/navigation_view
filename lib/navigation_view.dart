@@ -47,7 +47,7 @@ class _NavigationView extends State<NavigationView>{
   @override
   void initState() {
      if(widget.durationAnimation != null) durationAnimation = widget.durationAnimation!;
-    _currentPage =  0;
+    _currentPage =  widget.items.length - 1;
     super.initState();
   }
 
