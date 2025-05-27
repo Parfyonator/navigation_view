@@ -85,6 +85,21 @@ class _NavigationView extends State<NavigationView>{
                             ),
                             child: Column(
                               children: [
+                                Padding(
+                                    padding: const EdgeInsets.only(left: 4,right: 4),
+                                    child: AnimatedContainer(
+                                      duration: Duration(milliseconds: durationAnimation.inMilliseconds ~/ 2),
+                                      width: double.maxFinite,height: 2,
+                                      decoration: BoxDecoration(
+                                          color: (widget.color != null) ? widget.color! :  color,
+                                          borderRadius: (widget.borderRadius != null) ? widget.borderRadius! :  const BorderRadius.only(
+                                            topLeft: Radius.circular(4),
+                                            topRight: Radius.circular(4),
+                                            bottomLeft: Radius.circular(0),
+                                            bottomRight: Radius.circular(0),
+                                          )
+                                      ),
+                                    ))
                                 Expanded(child: Padding(
                                   padding: const EdgeInsets.only(left: 5,right: 5),
                                   child: AnimatedContainer(
@@ -104,21 +119,6 @@ class _NavigationView extends State<NavigationView>{
                                     ),
                                   ),
                                 )),
-                                Padding(
-                                    padding: const EdgeInsets.only(left: 4,right: 4),
-                                    child: AnimatedContainer(
-                                      duration: Duration(milliseconds: durationAnimation.inMilliseconds ~/ 2),
-                                      width: double.maxFinite,height: 4,
-                                      decoration: BoxDecoration(
-                                          color: (widget.color != null) ? widget.color! :  color,
-                                          borderRadius: (widget.borderRadius != null) ? widget.borderRadius! :  const BorderRadius.only(
-                                            topLeft: Radius.circular(4),
-                                            topRight: Radius.circular(4),
-                                            bottomLeft: Radius.circular(0),
-                                            bottomRight: Radius.circular(0),
-                                          )
-                                      ),
-                                    ))
                               ],
                             ),
 
