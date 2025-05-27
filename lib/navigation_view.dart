@@ -72,7 +72,7 @@ class _NavigationView extends State<NavigationView>{
                       height: constraints.maxHeight,
                       duration: Duration(milliseconds: durationAnimation.inMilliseconds),
                       child: Padding(
-                        padding: EdgeInsets.only(top: 5,bottom: 0,left: (45 /widget.items.length),right: (45 /widget.items.length)),
+                        padding: EdgeInsets.only(top: 0, bottom: 0,left: (45 /widget.items.length),right: (45 /widget.items.length)),
                         child:  InkWell(
                           onTap: (){
 
