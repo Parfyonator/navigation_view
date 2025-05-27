@@ -99,7 +99,7 @@ class _NavigationView extends State<NavigationView>{
                                             bottomRight: Radius.circular(0),
                                           )
                                       ),
-                                    ))
+                                    )),
                                 Expanded(child: Padding(
                                   padding: const EdgeInsets.only(left: 5,right: 5),
                                   child: AnimatedContainer(
